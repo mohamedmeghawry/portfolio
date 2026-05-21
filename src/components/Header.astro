@@ -1,0 +1,22 @@
+---
+const links = [
+  { href: "/about", label: "About" },
+  { href: "/work", label: "Work" },
+  { href: "/writing", label: "Writing" },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="border-b border-gray-200">
+  <nav class="mx-auto max-w-2xl px-6 py-5 flex items-center justify-between">
+    <a href="/" class="font-semibold tracking-tight">Mohamed Meghawry</a>
+    <ul class="flex gap-5 text-sm list-none m-0 p-0">
+      {links.map((link) => {
+        const isActive = currentPath === link.href || (link.href !== "/" && currentPath.startsWith(link.href));
+        const linkClass = isActive ? "text-gray-900 font-medium" : "text-gray-600 hover:text-gray-500 transition-colors";
+        return (<li><a href={link.href} class={linkClass}>{link.label}</a></li>);
+      })}
+    </ul>
+  </nav>
+</header>
