@@ -16,7 +16,7 @@ const { Content } = await render(post);
 const formatDate = (date) =>
   date.toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' });
 ---
-<Layout title={`${post.data.title} | Mohamed Meghawry`} description={post.data.description}>
+<Layout title={`${post.data.title} | Mohamed Meghawry`} description={post.data.description} type="article">
   <article>
     <header>
       <p class="text-sm text-gray-500">{formatDate(post.data.pubDate)}</p>

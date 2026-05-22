@@ -8,7 +8,10 @@ const posts = (await getCollection('writing', ({ data }) => !data.draft))
 const formatDate = (date) =>
   date.toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' });
 ---
-<Layout title="Writing | Mohamed Meghawry">
+<Layout
+  title="Writing | Mohamed Meghawry"
+  description="Lab writeups, home SOC experiments, and notes from the SOC pathway."
+>
   <h1 class="text-3xl font-bold tracking-tight">Writing</h1>
   <p class="mt-4 text-gray-600">Lab writeups, certification notes, and observations from the SOC pathway.</p>
 
