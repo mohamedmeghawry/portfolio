@@ -11,11 +11,10 @@ Clean, fast, blog-first. Astro + Tailwind. Static site, deployed to Cloudflare P
 - Plain language, not corporate speak.
 
 ## Content priorities (top to bottom)
-1. Security+ in progress, A+ certified
+1. IT/Operations Coordinator work at Maple Arts (frame as IT, not arts)
 2. Lab writeups (TryHackMe, HackTheBox, home SOC experiments)
-3. IT/Operations Coordinator work at Maple Arts (frame as IT, not arts)
-4. WhatsApp automation system (security-adjacent automation engineering angle)
-5. Education: BCS, York University
+3. WhatsApp automation system (security-adjacent automation engineering angle)
+4. Education: BCS, York University
 
 ## Stack
 - Astro (latest)
