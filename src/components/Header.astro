@@ -15,7 +15,15 @@ const currentPath = Astro.url.pathname;
       {links.map((link) => {
         const isActive = currentPath === link.href || (link.href !== "/" && currentPath.startsWith(link.href));
         const linkClass = isActive ? "text-gray-900 font-medium" : "text-gray-600 hover:text-gray-500 transition-colors";
-        return (<li><a href={link.href} class={linkClass}>{link.label}</a></li>);
+        return (
+          <li>
+            <a
+              href={link.href}
+              class={linkClass}
+              aria-current={isActive ? "page" : undefined}
+            >{link.label}</a>
+          </li>
+        );
       })}
     </ul>
   </nav>
