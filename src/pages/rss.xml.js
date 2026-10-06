@@ -6,7 +6,7 @@ export async function GET(context) {
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
   return rss({
-    title: 'Mohamed Meghawry — Writing',
+    title: 'Writing by Mohamed Meghawry',
     description: 'Lab writeups, home SOC experiments, and notes from the SOC pathway.',
     site: context.site,
     items: posts.map((post) => ({
