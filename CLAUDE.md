@@ -32,7 +32,7 @@ Facts come from `Career/resume/src/lib/resume-data.ts`; public-safe rules from `
 ## Project structure
 - `src/pages/`: routes. `index.astro` (home), `about.astro`, `work.astro`, `writing.astro` (post list), `writing/[...slug].astro` (post detail), `404.astro`, `rss.xml.js` (feed)
 - `src/layouts/Layout.astro`: shared shell with head/SEO/OG/Twitter meta, skip link, Header, Footer. Props: `title`, `description?`, `image?`, `type?`
-- `src/components/`: `Header.astro` (nav: About, Work, Writing), `Footer.astro` (Email, LinkedIn, GitHub)
+- `src/components/`: `Header.astro` (nav: About, Work, Writing), `Footer.astro` (Email, LinkedIn; GitHub removed 2026-10-05 until it holds desktop-relevant work)
 - `src/content/writing/`: blog posts (`.md` / `.mdx`)
 - `src/content.config.ts`: the `writing` collection schema
 - `src/styles/global.css`: Tailwind entry point
