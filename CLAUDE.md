@@ -1,7 +1,8 @@
 # mohamedmeghawry.com
 
 ## Project goal
-Personal portfolio for Mohamed Meghawry, positioning for SOC Tier 1 Analyst roles.
+Personal portfolio for Mohamed Meghawry. Positioning: Desktop Analyst, healthcare IT
+(decided 2026-10-05, see Career/PROFILE.md POS-1). Security operations is the longer-term track.
 Clean, fast, blog-first. Astro + Tailwind. Static site, deployed to Cloudflare Pages.
 
 ## Voice and style rules
@@ -11,10 +12,12 @@ Clean, fast, blog-first. Astro + Tailwind. Static site, deployed to Cloudflare P
 - Plain language, not corporate speak.
 
 ## Content priorities (top to bottom)
-1. IT/Operations Coordinator work at Maple Arts (frame as IT, not arts)
-2. Lab writeups (TryHackMe, HackTheBox, home SOC experiments)
-3. WhatsApp automation system (security-adjacent automation engineering angle)
+1. Desktop and endpoint work at LifeLabs. Generic wording only: no ticket counts, no client config detail.
+2. Technical Support Engineer at The Canadian Arabic Orchestra (frame as IT; the employer is never labelled "Maple Arts"; the app's store name is Maple Arts), including the app and the WhatsApp automation
+3. Writing: only real writeups. Never claim labs or experiments that do not exist yet.
 4. Education: BCS, York University
+
+Facts come from `Career/resume/src/lib/resume-data.ts`; public-safe rules from `Career/CAREER-MAP.md`.
 
 ## Stack
 - Astro 6.x (static output, no SSR adapter)
@@ -33,7 +36,7 @@ Clean, fast, blog-first. Astro + Tailwind. Static site, deployed to Cloudflare P
 - `src/content/writing/`: blog posts (`.md` / `.mdx`)
 - `src/content.config.ts`: the `writing` collection schema
 - `src/styles/global.css`: Tailwind entry point
-- `public/`: static assets (favicon, robots.txt)
+- `public/`: static assets (favicon, robots.txt, `og.png` default social preview, set in Layout.astro)
 
 ## Commands
 - `npm run dev`: local dev server (localhost:4321)
